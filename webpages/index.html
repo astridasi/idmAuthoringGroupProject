@@ -1,26 +1,114 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/main.css">
-        <title>Dublin Medical Hub</title>
-    </head>
-    <body>
-        <!-- Navbar (sticky on top of page) -->
-        <nav>
-            <!-- Logo -->
-            <img> 
-            <!-- Website name -->
-            <h1></h1>
-        </nav>
-        <div>
-            <p></p>
-            <p></p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template for hospital website</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+      header img {
+        height: 5em;
+        width: auto;
+      }
+      .main {
+        display: grid;
+        max-width: 1200px;
+        margin: 40px auto;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+      }
+      .emergency button {
+        width: fit-content;
+        background-color: #fb3640;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .map {
+        background-color: #e0e0e0;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+      section:last-of-type {
+        text-align: center;
+        padding: 20px 40px;
+        border-top: 1px solid #eee;
+      }
+      #eu,
+      #non-eu {
+        width: 40%;
+        padding: 15px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      #eu {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      #non-eu {
+        background-color: #14591d;
+        color: f0f0f0;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        background-color: #f0f0f0;
+        border-top: 1px solid #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="homepage.html"><img src="logo.png" /></a>
+      <h1><a href="homepage.html">Website Name</a></h1>
+      <input type="search" placeholder="search" />
+      <nav>
+        <ul>
+          <li>Language toggle</li>
+          <li>Setting</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- emergency and map -->
+    <main>
+      <section class="main">
+        <div class="emergency">
+          <h2>title</h2>
+          <p>content</p>
+          <button>Emergency</button>
         </div>
-        <div>
-            <h2>
-        </div>
-    </body>
+        <div class="map">Map</div>
+      </section>
+      <!-- insurance information -->
+      <section>
+        <button id="eu">eu health insurance</button>
+        <button id="non-eu">non-eu health</button>
+        <p>content</p>
+      </section>
+    </main>
+    <!-- footer -->
     <footer>
-        <!-- Footer. Copyright information, contact, etc -->
+      <a href="url">page1</a>
+      <a href="url">page2</a>
+      <a href="url">page3</a>
     </footer>
+  </body>
 </html>
+
+
